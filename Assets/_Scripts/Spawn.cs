@@ -7,7 +7,7 @@ public class Spawn : MonoBehaviour
 	float timeLeft = 0.0f;
 	// gameobject to be spawned
 	public GameObject monsterType = null;
-
+    bool isFirstEnemy = true;
     public Transform[] waypoints;
 
 
@@ -17,6 +17,7 @@ public class Spawn : MonoBehaviour
     void Awake()
     {
         wayPointControllerScript = (WayPointController)monsterType.GetComponent("WayPointController");
+        
     }
 
 	// Update is called once per frame
@@ -26,13 +27,24 @@ public class Spawn : MonoBehaviour
 		timeLeft -= Time.deltaTime;
 		if (timeLeft <= 0.0f)
 		{
-			// spawn
+            // spawn
 			GameObject enemy = (GameObject)Instantiate(monsterType, transform.position, Quaternion.identity);
+            //TODO Fix this bug. First enemy always throws a exception            
 
+
+            Debug.Log(isFirstEnemy);
+
+            wayPointControllerScript.waypoints = new Transform[3];
             wayPointControllerScript.waypoints = waypoints;
             //Set enemy route
-			// reset time
-			timeLeft = interval;
+            // reset time
+            timeLeft = interval;
+            if (isFirstEnemy)
+            {
+                Destroy(enemy);
+                isFirstEnemy = false;
+                return;
+            }
 		}
 	}
 

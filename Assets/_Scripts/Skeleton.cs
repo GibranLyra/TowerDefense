@@ -1,29 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using Assets._Scripts.BaseClasses;
 
-public class Skeleton : MonoBehaviour 
+namespace Assets._Scripts
 {
-    public int health = 6;
-
-    void Update()
+    public class Skeleton : UnitBase
     {
-        // set textmesh text
-        TextMesh tm = GetComponentInChildren<TextMesh>();
-        tm.text = new string('-', health);
 
-        // set textmesh color to red
-        tm.renderer.material.color = Color.red;
-
-        // adjust health bar so it always faces the camera
-        tm.transform.forward = Camera.main.transform.forward;
-    }
-
-    public void onDeath()
-    {
-        // increase player gold
-        Player.gold = Player.gold + 1;
-
-        // destroy
-        Destroy(gameObject);
     }
 }

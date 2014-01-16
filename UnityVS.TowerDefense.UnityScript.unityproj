@@ -48,10 +48,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityVS.TowerDefense.UnityScript.Plugins.unityproj">
-      <Project>{29E7D9DF-9927-7F64-7747-B20D65ACD059}</Project>
-      <Name>UnityVS.TowerDefense.UnityScript.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityVS.TowerDefense.CSharp.Plugins.csproj">
       <Project>{04BFCF65-6D5F-9DF7-5A3A-C091C5463939}</Project>
       <Name>UnityVS.TowerDefense.CSharp.Plugins</Name>
@@ -67,31 +63,6 @@
     <Compile Include="Assets\Shaders\Show Overdraw\ShowOverdrawToggle.js" />
     <Compile Include="Assets\Shaders\Show RenderTypes\ShowRenderTypes.js" />
     <Compile Include="Assets\Shaders\Show UV Mapping\ShowUVMapping.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FollowTransform.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Joystick.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\ObliqueNear.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\PlayerRelativeControl.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\RollABall.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\RotationConstraint.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\SidescrollControl.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\SmoothFollow2D.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\tapcontrol.js" />
-    <Compile Include="Assets\Standard Assets (Mobile)\Scripts\ZoomCamera.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\cameraViewObject.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\clearText.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\GUI\buttonAnimationPause.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\GUI\buttonClickFlash.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\GUI\buttonHoverSetText.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\GUI\buttonPicker.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\GUI\buttonPosition.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\GUI\buttonSetAnimation.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\GUI\buttonSetMaterial.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\GUI\buttonSize.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\GUI\buttonSwitchTexture.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\infoText.js" />
-    <Compile Include="Assets\Units\BaseMale\Scripts\shadow.js" />
     <None Include="Assets\Common Assets\RenderDepth.shader" />
     <None Include="Assets\Common Assets\RenderNormalsAndDepth.shader" />
     <None Include="Assets\GUI\Necromancer GUI\Kingthings.txt" />
@@ -106,25 +77,6 @@
     <None Include="Assets\Shaders\Show Overdraw\RenderOverdrawZ.shader" />
     <None Include="Assets\Shaders\Show RenderTypes\ShowRenderTypes.shader" />
     <None Include="Assets\Shaders\Show UV Mapping\ShowUVMapping.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
-    <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-    <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
-    <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
-    <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
-    <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-    <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
-    <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
-    <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
-    <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
-    <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
     <None Include="Assets\Textures\Forest Grounds - Terrain Texture Pack\Readme.txt" />
     <None Include="Assets\Units\SkeletonData\animations.txt" />
   </ItemGroup>
@@ -142,33 +94,9 @@
     <Folder Include="Assets\Shaders\Show Overdraw" />
     <Folder Include="Assets\Shaders\Show RenderTypes" />
     <Folder Include="Assets\Shaders\Show UV Mapping" />
-    <Folder Include="Assets\Standard Assets" />
-    <Folder Include="Assets\Standard Assets (Mobile)" />
-    <Folder Include="Assets\Standard Assets (Mobile)\Scripts" />
-    <Folder Include="Assets\Standard Assets (Mobile)\Shaders" />
-    <Folder Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)" />
-    <Folder Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders" />
-    <Folder Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders" />
-    <Folder Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders" />
-    <Folder Include="Assets\Standard Assets\Particles" />
-    <Folder Include="Assets\Standard Assets\Particles\Sources" />
-    <Folder Include="Assets\Standard Assets\Particles\Sources\Shaders" />
-    <Folder Include="Assets\Standard Assets\Projectors" />
-    <Folder Include="Assets\Standard Assets\Projectors\Sources" />
-    <Folder Include="Assets\Standard Assets\Projectors\Sources\Shaders" />
-    <Folder Include="Assets\Standard Assets\Skyboxes" />
-    <Folder Include="Assets\Standard Assets\Toon Shading" />
-    <Folder Include="Assets\Standard Assets\Toon Shading\Sources" />
-    <Folder Include="Assets\Standard Assets\Toon Shading\Sources\Shaders" />
-    <Folder Include="Assets\Standard Assets\Water (Basic)" />
-    <Folder Include="Assets\Standard Assets\Water (Basic)\Sources" />
-    <Folder Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders" />
     <Folder Include="Assets\Textures" />
     <Folder Include="Assets\Textures\Forest Grounds - Terrain Texture Pack" />
     <Folder Include="Assets\Units" />
-    <Folder Include="Assets\Units\BaseMale" />
-    <Folder Include="Assets\Units\BaseMale\Scripts" />
-    <Folder Include="Assets\Units\BaseMale\Scripts\GUI" />
     <Folder Include="Assets\Units\SkeletonData" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2012\UnityVS.UnityScript.targets" />

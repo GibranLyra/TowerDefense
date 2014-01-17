@@ -30,7 +30,7 @@ public class Turret : MonoBehaviour
                 if (Vector3.Distance(transform.position, target.transform.position) <= range)
                 {
                     // spawn bullet
-                    GameObject g = (GameObject)Instantiate(bulletPrefab.gameObject, bulletPrefab.transform.position, Quaternion.identity);
+                    GameObject g = (GameObject)Instantiate(bulletPrefab.gameObject, GameObject.Find("BulletSpawnPoint").transform.position, Quaternion.identity);
 
                     // get access to bullet component
                     Bullet b = g.GetComponent<Bullet>();

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.GibrasDefense.CSharp.Plugins", "UnityVS.GibrasDefense.CSharp.Plugins.csproj", "{1BD1A0FB-185B-991B-2845-ACC03189377E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.GibrasDefense.CSharp", "UnityVS.GibrasDefense.CSharp.csproj", "{346F9E12-E54B-CBC6-9CE4-4B8981F8E7D7}"
+EndProject
+Project("{1FAC5C55-277D-4884-94A4-83DBDAF57E56}") = "UnityVS.GibrasDefense.UnityScript", "UnityVS.GibrasDefense.UnityScript.unityproj", "{21C0FDA8-A960-2A9E-327B-3C3FC99B2CDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BD1A0FB-185B-991B-2845-ACC03189377E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD1A0FB-185B-991B-2845-ACC03189377E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD1A0FB-185B-991B-2845-ACC03189377E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD1A0FB-185B-991B-2845-ACC03189377E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346F9E12-E54B-CBC6-9CE4-4B8981F8E7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346F9E12-E54B-CBC6-9CE4-4B8981F8E7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346F9E12-E54B-CBC6-9CE4-4B8981F8E7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346F9E12-E54B-CBC6-9CE4-4B8981F8E7D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C0FDA8-A960-2A9E-327B-3C3FC99B2CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C0FDA8-A960-2A9E-327B-3C3FC99B2CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C0FDA8-A960-2A9E-327B-3C3FC99B2CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C0FDA8-A960-2A9E-327B-3C3FC99B2CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

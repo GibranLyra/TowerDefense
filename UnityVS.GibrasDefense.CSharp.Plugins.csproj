@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{40FF940E-3242-CBFC-3AEA-75D48952A400}</ProjectGuid>
+    <ProjectGuid>{1BD1A0FB-185B-991B-2845-ACC03189377E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace></RootNamespace>
-    <AssemblyName>Assembly-UnityScript</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{84365F2C-1DDE-431A-8C14-179ADC971E4D};{1FAC5C55-277D-4884-94A4-83DBDAF57E56}</ProjectTypeGuids>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
@@ -48,21 +48,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityVS.TowerDefense.CSharp.Plugins.csproj">
-      <Project>{04BFCF65-6D5F-9DF7-5A3A-C091C5463939}</Project>
-      <Name>UnityVS.TowerDefense.CSharp.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Common Assets\RenderDepth.js" />
-    <Compile Include="Assets\Common Assets\Rotate.js" />
-    <Compile Include="Assets\GUI\Necromancer GUI\GUITestScript.js" />
-    <Compile Include="Assets\Shaders\Edge Detection\EdgeDetectEffectNormals.js" />
-    <Compile Include="Assets\Shaders\Glowing Things\FunkyGlowingThingsEffect.js" />
-    <Compile Include="Assets\Shaders\Show Overdraw\ShowOverdraw.js" />
-    <Compile Include="Assets\Shaders\Show Overdraw\ShowOverdrawToggle.js" />
-    <Compile Include="Assets\Shaders\Show RenderTypes\ShowRenderTypes.js" />
-    <Compile Include="Assets\Shaders\Show UV Mapping\ShowUVMapping.js" />
+    <Compile Include="Assets\Pro Standard Assets\Image Based\ImageEffectBase.cs" />
+    <Compile Include="Assets\Pro Standard Assets\Image Based\ImageEffects.cs" />
     <None Include="Assets\Common Assets\RenderDepth.shader" />
     <None Include="Assets\Common Assets\RenderNormalsAndDepth.shader" />
     <None Include="Assets\GUI\Necromancer GUI\Kingthings.txt" />
@@ -80,24 +67,5 @@
     <None Include="Assets\Textures\Forest Grounds - Terrain Texture Pack\Readme.txt" />
     <None Include="Assets\Units\SkeletonData\animations.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets" />
-    <Folder Include="Assets\Common Assets" />
-    <Folder Include="Assets\GUI" />
-    <Folder Include="Assets\GUI\Necromancer GUI" />
-    <Folder Include="Assets\Objects" />
-    <Folder Include="Assets\Objects\MedievalHouse" />
-    <Folder Include="Assets\Objects\three_simple_rocks" />
-    <Folder Include="Assets\Shaders" />
-    <Folder Include="Assets\Shaders\Edge Detection" />
-    <Folder Include="Assets\Shaders\Glowing Things" />
-    <Folder Include="Assets\Shaders\Show Overdraw" />
-    <Folder Include="Assets\Shaders\Show RenderTypes" />
-    <Folder Include="Assets\Shaders\Show UV Mapping" />
-    <Folder Include="Assets\Textures" />
-    <Folder Include="Assets\Textures\Forest Grounds - Terrain Texture Pack" />
-    <Folder Include="Assets\Units" />
-    <Folder Include="Assets\Units\SkeletonData" />
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2012\UnityVS.UnityScript.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2012\UnityVS.CSharp.targets" />
 </Project>

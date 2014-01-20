@@ -4,7 +4,7 @@ using System.Collections;
 public class TowerSlot : MonoBehaviour
 {
     public GUISkin skin = null;
-
+    public Vector3 offset;
     bool gui = false;
 
     // Tower prefab
@@ -15,7 +15,6 @@ public class TowerSlot : MonoBehaviour
         if (gui)
         {
             GUI.skin = skin;
-
             // get 3d position on screen        
             Vector3 v = Camera.main.WorldToScreenPoint(transform.position);
 
@@ -38,10 +37,10 @@ public class TowerSlot : MonoBehaviour
                 Player.gold -= turretPrefab.buildPrice;
 
                 // instantiate
-                Instantiate(turretPrefab, transform.position, Quaternion.identity);
+                Instantiate(turretPrefab, transform.position + offset, transform.rotation);
 
                 // disable gameobject
-                gameObject.SetActive(false);
+             //   gameObject.SetActive(false);
             }
         }
     }
